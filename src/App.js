@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import DanhSachQuanCuoc from "./components/DanhSachQuanCuoc";
+import DanhSachXucXac from "./components/DanhSachXucXac";
+import DiemCuoc from "./components/DiemCuoc";
+import "./GameBauCua.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="game-bau-cua" className="container-fluid p-5">
+      <DiemCuoc />
+      <div className="row">
+        <div className="col-8">
+          <DanhSachQuanCuoc />
+        </div>
+        <div className="col-4">
+          <DanhSachXucXac />
+        </div>
+      </div>
     </div>
   );
 }
